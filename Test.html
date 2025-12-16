@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Minh - Cyber Security</title>
+    <style>
+        /* Cấu hình chung */
+        body { 
+            font-family: 'Segoe UI', Roboto, Arial, sans-serif; 
+            line-height: 1.6; 
+            margin: 0; 
+            padding: 20px; 
+            background: #e5e7eb; /* Nền ngoài màu xám sáng */
+            color: #374151; /* Màu chữ xám đậm dễ đọc */
+            font-size: 14px;
+        }
+
+        /* Khung CV */
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            background: #ffffff; /* Nền CV màu trắng sáng */
+            display: flex; 
+            flex-wrap: wrap; 
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Cột trái (Sidebar) */
+        .sidebar { 
+            background: #1f2937; /* Màu xám đen sang trọng (không đen tuyền) */
+            color: #f3f4f6; 
+            width: 35%; 
+            padding: 30px 25px; 
+            box-sizing: border-box; 
+        }
+
+        /* Cột phải (Nội dung chính) */
+        .main-content { 
+            width: 65%; 
+            padding: 40px 35px; 
+            box-sizing: border-box; 
+            background: #ffffff;
+        }
+
+        /* Tiêu đề chính */
+        h1 { 
+            margin: 0; 
+            font-size: 32px; 
+            color: #111827; 
+            text-transform: uppercase; 
+            letter-spacing: 3px; 
+            font-weight: 800;
+        }
+        
+        h2 { 
+            margin: 5px 0 35px 0; 
+            font-size: 14px; 
+            color: #6b7280; 
+            font-weight: 600; 
+            letter-spacing: 1.5px; 
+            text-transform: uppercase;
+        }
+
+        /* Tiêu đề phụ bên Sidebar */
+        .sidebar h3 { 
+            color: #ffffff; 
+            border-bottom: 1px solid #4b5563; 
+            padding-bottom: 8px; 
+            margin-top: 30px; 
+            margin-bottom: 15px; 
+            font-size: 15px; 
+            text-transform: uppercase; 
+            letter-spacing: 1px; 
+        }
+
+        /* Tiêu đề mục bên Main Content */
+        .section-title { 
+            font-size: 16px; 
+            color: #1f2937; 
+            border-bottom: 2px solid #1f2937; /* Đường kẻ dưới chân */
+            padding-bottom: 5px;
+            margin-bottom: 20px; 
+            text-transform: uppercase; 
+            font-weight: 700; 
+            letter-spacing: 0.5px;
+        }
+        
+        /* Link */
+        a { color: #d1d5db; text-decoration: none; transition: 0.3s;}
+        .sidebar a:hover { color: #fff; }
+        
+        /* Danh sách */
+        ul { list-style-type: none; padding: 0; margin: 0; }
+        li { margin-bottom: 10px; position: relative; padding-left: 20px; }
+        
+        /* Dấu chấm đầu dòng */
+        .main-content li::before {
+            content: "▪";
+            color: #1f2937;
+            position: absolute;
+            left: 0;
+            font-size: 1.2em;
+            line-height: 1.4;
+        }
+
+        /* Công việc */
+        .job-item, .edu-item { margin-bottom: 30px; }
+        .job-title { font-weight: 700; font-size: 16px; color: #000; }
+        .company { 
+            font-size: 13px; 
+            color: #4b5563; 
+            font-style: italic; 
+            display: block; 
+            margin-bottom: 10px; 
+            background: #f3f4f6; 
+            padding: 2px 8px; 
+            border-radius: 4px;
+            display: inline-block;
+        }
+
+        /* Emoji: Giữ gọn gàng nhưng màu sắc bình thường hoặc xám nhẹ */
+        .icon { 
+            display: inline-block; 
+            width: 25px; 
+            text-align: center; 
+            margin-right: 5px; 
+        }
+
+        /* Kỹ năng bên trái */
+        .sidebar ul li { padding-left: 0; margin-bottom: 8px; border-bottom: 1px dashed #374151; padding-bottom: 5px;}
+        .sidebar ul li:last-child { border-bottom: none; }
+
+        /* Cấu hình in ấn */
+        @media print {
+            body { -webkit-print-color-adjust: exact; print-color-adjust: exact; background: #fff; }
+            .container { box-shadow: none; margin: 0; width: 100%; max-width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="sidebar">
+        <div style="text-align: center; margin-bottom: 20px;">
+             </div>
+
+        <h3>Liên Hệ</h3>
+        <p><span class="icon">📍</span> Hà Nội, 100000</p>
+        <p><span class="icon">📞</span> +84 363 618 999</p>
+        <p><span class="icon">✉️</span> tomkila123@gmail.com</p>
+        
+        <h3>Liên Kết</h3>
+        <p><strong>Github:</strong> <br><a href="https://github.com/MinhYz">github.com/MinhYz</a></p>
+        <p><strong>Profile:</strong> <br><a href="https://zyo.lol/minhg">zyo.lol/minhg</a></p>
+
+        <h3>Kỹ Năng Chuyên Môn</h3>
+        <ul>
+            <li>🛡️ Bảo mật hệ thống & Mạng</li>
+            <li>🔍 Pentest & Vuln Scan</li>
+            <li>📊 Phân tích rủi ro (Risk)</li>
+            <li>🔐 Cryptography & Blockchain</li>
+            <li>⚡ Xử lý sự cố (Incident Response)</li>
+        </ul>
+        
+        <h3>Kỹ Năng Mềm</h3>
+        <ul>
+            <li>Chịu áp lực cao</li>
+            <li>Làm việc nhóm & Lãnh đạo</li>
+            <li>Tư duy phản biện</li>
+        </ul>
+
+        <h3>Khác</h3>
+        <p>🚗 Giấy phép lái xe: Hạng B</p>
+    </div>
+
+    <div class="main-content">
+        <div style="margin-bottom: 10px;">
+            <h1>NHÓM 3</h1>
+            <h2>CHUYÊN GIA AN NINH MẠNG</h2>
+        </div>
+
+        <div class="section-title">Học Vấn</div>
+        <div class="edu-item">
+            <div class="job-title">TIẾN SĨ AN NINH MẠNG</div>
+            <span class="company">Đại Học Bắc Kinh (Trung Quốc) | Tốt nghiệp 2019</span>
+            <ul>
+                <li>Tốt nghiệp Tiến sĩ loại Xuất sắc. Luận án về mô hình phòng thủ mạng dựa trên AI.</li>
+                <li>Nghiên cứu chuyên sâu: Mã hóa lượng tử (Quantum Cryptography), Blockchain Security và Big Data Analytics.</li>
+            </ul>
+        </div>
+
+        <div class="section-title">Kinh Nghiệm Làm Việc</div>
+        <div class="job-item">
+            <div class="job-title">CHUYÊN GIA AN NINH MẠNG</div>
+            <span class="company">NASA (USA) | 12/2025 - Hiện tại</span>
+            <ul>
+                <li>Dẫn dắt chiến lược an ninh mạng đa ngành, đảm bảo hệ thống vận hành ổn định 24/7.</li>
+                <li>Thiết kế kiến trúc Cloud Security, đảm bảo tính bí mật và toàn vẹn dữ liệu.</li>
+                <li>Xây dựng hệ thống phòng thủ biên mạng (Perimeter Defense) ngăn chặn tấn công ngoài.</li>
+                <li>Thực hiện Application Security Vetting và điều phối ứng phó sự cố khẩn cấp.</li>
+            </ul>
+        </div>
+        
+        <div class="section-title">Chứng Chỉ & Dự Án</div>
+        <div class="job-item">
+            <ul>
+                <li><strong>Chứng chỉ quốc tế:</strong> OSCP, CISSP, CEH (Master).</li>
+                <li><strong>Dự án tiêu biểu:</strong> Xây dựng tường lửa ứng dụng web (WAF) tích hợp AI tự học hành vi tấn công.</li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
